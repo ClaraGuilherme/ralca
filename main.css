@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url(fonte/libre/LibreBaskerville-Italic.ttf);
+}
+@font-face {
+    font-family: 'noto-sans';
+    src: url(fonte/noto-sans/NotoSansJP-Regular.otf);
+}
+:root {
+    --fonte-principal: 'Baskerville';
+    --fonte-destaque: 'noto-sans';
+    --cor01: #4d75a8;
+    --cor02: #f5aaa2;
+    --cor03: #dbf571;
+    --cor04: #727d42;
+    --cor05: #8ab9f6;
+}
+
+header {
+    background-color: var(--cor01);
+}
+
+#logo {
+    font: normal normal 2em var(--fonte-principal);
+    color: var(--cor02);
+    padding: 1.3em 2em;
+}
+
+.link-ativado {
+    text-decoration: none;
+    color: var(--cor05);
+}
+
+nav > a {
+    font-family: var(--fonte-destaque);
+}
+.nav-link {
+    color: var(--cor03);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #f5aaa23a;
+}
